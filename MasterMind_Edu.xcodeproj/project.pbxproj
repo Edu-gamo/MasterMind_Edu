@@ -1,0 +1,531 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF1242CF27F7443F003FCE36 /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1242CE27F7443F003FCE36 /* ResultsView.swift */; };
+		EF1242D127F74470003FCE36 /* DotViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1242D027F74470003FCE36 /* DotViewModel.swift */; };
+		EF1242D327F74482003FCE36 /* DotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1242D227F74482003FCE36 /* DotView.swift */; };
+		EF1242D527F75942003FCE36 /* RowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1242D427F75942003FCE36 /* RowViewModel.swift */; };
+		EF1242D727F75958003FCE36 /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1242D627F75958003FCE36 /* RowView.swift */; };
+		EF1242D927F76B5A003FCE36 /* InformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1242D827F76B5A003FCE36 /* InformationView.swift */; };
+		EF684FB228008C3A007839BD /* CombinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF684FB128008C3A007839BD /* CombinationView.swift */; };
+		EF684FB428008C50007839BD /* CombinationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF684FB328008C50007839BD /* CombinationViewModel.swift */; };
+		EF80543D27EE1B6B00A2C8E5 /* MasterMind_EduApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF80543C27EE1B6B00A2C8E5 /* MasterMind_EduApp.swift */; };
+		EF80543F27EE1B6B00A2C8E5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF80543E27EE1B6B00A2C8E5 /* ContentView.swift */; };
+		EF80544127EE1B6D00A2C8E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF80544027EE1B6D00A2C8E5 /* Assets.xcassets */; };
+		EF80544427EE1B6D00A2C8E5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF80544327EE1B6D00A2C8E5 /* Preview Assets.xcassets */; };
+		EF80544E27EE1B6D00A2C8E5 /* MasterMind_EduTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF80544D27EE1B6D00A2C8E5 /* MasterMind_EduTests.swift */; };
+		EF80546727EE1CFE00A2C8E5 /* MasterMindViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF80546627EE1CFE00A2C8E5 /* MasterMindViewModel.swift */; };
+		EF80546927EE1D6F00A2C8E5 /* Combination.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF80546827EE1D6F00A2C8E5 /* Combination.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF80544A27EE1B6D00A2C8E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF80543127EE1B6B00A2C8E5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF80543827EE1B6B00A2C8E5;
+			remoteInfo = MasterMind_Edu;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EF1242CE27F7443F003FCE36 /* ResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsView.swift; sourceTree = "<group>"; };
+		EF1242D027F74470003FCE36 /* DotViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotViewModel.swift; sourceTree = "<group>"; };
+		EF1242D227F74482003FCE36 /* DotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotView.swift; sourceTree = "<group>"; };
+		EF1242D427F75942003FCE36 /* RowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowViewModel.swift; sourceTree = "<group>"; };
+		EF1242D627F75958003FCE36 /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
+		EF1242D827F76B5A003FCE36 /* InformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationView.swift; sourceTree = "<group>"; };
+		EF684FB128008C3A007839BD /* CombinationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinationView.swift; sourceTree = "<group>"; };
+		EF684FB328008C50007839BD /* CombinationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinationViewModel.swift; sourceTree = "<group>"; };
+		EF80543927EE1B6B00A2C8E5 /* MasterMind_Edu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MasterMind_Edu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF80543C27EE1B6B00A2C8E5 /* MasterMind_EduApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterMind_EduApp.swift; sourceTree = "<group>"; };
+		EF80543E27EE1B6B00A2C8E5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EF80544027EE1B6D00A2C8E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF80544327EE1B6D00A2C8E5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EF80544927EE1B6D00A2C8E5 /* MasterMind_EduTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MasterMind_EduTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF80544D27EE1B6D00A2C8E5 /* MasterMind_EduTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterMind_EduTests.swift; sourceTree = "<group>"; };
+		EF80546627EE1CFE00A2C8E5 /* MasterMindViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterMindViewModel.swift; sourceTree = "<group>"; };
+		EF80546827EE1D6F00A2C8E5 /* Combination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Combination.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF80543627EE1B6B00A2C8E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF80544627EE1B6D00A2C8E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF684FB52800A7C0007839BD /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				EF80546627EE1CFE00A2C8E5 /* MasterMindViewModel.swift */,
+				EF1242D027F74470003FCE36 /* DotViewModel.swift */,
+				EF1242D427F75942003FCE36 /* RowViewModel.swift */,
+				EF684FB328008C50007839BD /* CombinationViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		EF684FB62800A7DB007839BD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EF1242D227F74482003FCE36 /* DotView.swift */,
+				EF1242D627F75958003FCE36 /* RowView.swift */,
+				EF684FB128008C3A007839BD /* CombinationView.swift */,
+				EF1242D827F76B5A003FCE36 /* InformationView.swift */,
+				EF1242CE27F7443F003FCE36 /* ResultsView.swift */,
+				EF80543E27EE1B6B00A2C8E5 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EF684FB72800A7FB007839BD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EF80546827EE1D6F00A2C8E5 /* Combination.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EF80543027EE1B6B00A2C8E5 = {
+			isa = PBXGroup;
+			children = (
+				EF80543B27EE1B6B00A2C8E5 /* MasterMind_Edu */,
+				EF80544C27EE1B6D00A2C8E5 /* MasterMind_EduTests */,
+				EF80543A27EE1B6B00A2C8E5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF80543A27EE1B6B00A2C8E5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF80543927EE1B6B00A2C8E5 /* MasterMind_Edu.app */,
+				EF80544927EE1B6D00A2C8E5 /* MasterMind_EduTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF80543B27EE1B6B00A2C8E5 /* MasterMind_Edu */ = {
+			isa = PBXGroup;
+			children = (
+				EF80543C27EE1B6B00A2C8E5 /* MasterMind_EduApp.swift */,
+				EF684FB72800A7FB007839BD /* Models */,
+				EF684FB62800A7DB007839BD /* Views */,
+				EF684FB52800A7C0007839BD /* ViewModels */,
+				EF80544027EE1B6D00A2C8E5 /* Assets.xcassets */,
+				EF80544227EE1B6D00A2C8E5 /* Preview Content */,
+			);
+			path = MasterMind_Edu;
+			sourceTree = "<group>";
+		};
+		EF80544227EE1B6D00A2C8E5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EF80544327EE1B6D00A2C8E5 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EF80544C27EE1B6D00A2C8E5 /* MasterMind_EduTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF80544D27EE1B6D00A2C8E5 /* MasterMind_EduTests.swift */,
+			);
+			path = MasterMind_EduTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF80543827EE1B6B00A2C8E5 /* MasterMind_Edu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF80545D27EE1B6D00A2C8E5 /* Build configuration list for PBXNativeTarget "MasterMind_Edu" */;
+			buildPhases = (
+				EF80543527EE1B6B00A2C8E5 /* Sources */,
+				EF80543627EE1B6B00A2C8E5 /* Frameworks */,
+				EF80543727EE1B6B00A2C8E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MasterMind_Edu;
+			productName = MasterMind_Edu;
+			productReference = EF80543927EE1B6B00A2C8E5 /* MasterMind_Edu.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF80544827EE1B6D00A2C8E5 /* MasterMind_EduTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF80546027EE1B6D00A2C8E5 /* Build configuration list for PBXNativeTarget "MasterMind_EduTests" */;
+			buildPhases = (
+				EF80544527EE1B6D00A2C8E5 /* Sources */,
+				EF80544627EE1B6D00A2C8E5 /* Frameworks */,
+				EF80544727EE1B6D00A2C8E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF80544B27EE1B6D00A2C8E5 /* PBXTargetDependency */,
+			);
+			name = MasterMind_EduTests;
+			productName = MasterMind_EduTests;
+			productReference = EF80544927EE1B6D00A2C8E5 /* MasterMind_EduTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF80543127EE1B6B00A2C8E5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					EF80543827EE1B6B00A2C8E5 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					EF80544827EE1B6D00A2C8E5 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = EF80543827EE1B6B00A2C8E5;
+					};
+				};
+			};
+			buildConfigurationList = EF80543427EE1B6B00A2C8E5 /* Build configuration list for PBXProject "MasterMind_Edu" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF80543027EE1B6B00A2C8E5;
+			productRefGroup = EF80543A27EE1B6B00A2C8E5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF80543827EE1B6B00A2C8E5 /* MasterMind_Edu */,
+				EF80544827EE1B6D00A2C8E5 /* MasterMind_EduTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF80543727EE1B6B00A2C8E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF80544427EE1B6D00A2C8E5 /* Preview Assets.xcassets in Resources */,
+				EF80544127EE1B6D00A2C8E5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF80544727EE1B6D00A2C8E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF80543527EE1B6B00A2C8E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF80543F27EE1B6B00A2C8E5 /* ContentView.swift in Sources */,
+				EF1242D527F75942003FCE36 /* RowViewModel.swift in Sources */,
+				EF1242D127F74470003FCE36 /* DotViewModel.swift in Sources */,
+				EF1242D327F74482003FCE36 /* DotView.swift in Sources */,
+				EF1242D727F75958003FCE36 /* RowView.swift in Sources */,
+				EF684FB228008C3A007839BD /* CombinationView.swift in Sources */,
+				EF1242D927F76B5A003FCE36 /* InformationView.swift in Sources */,
+				EF80546727EE1CFE00A2C8E5 /* MasterMindViewModel.swift in Sources */,
+				EF684FB428008C50007839BD /* CombinationViewModel.swift in Sources */,
+				EF80543D27EE1B6B00A2C8E5 /* MasterMind_EduApp.swift in Sources */,
+				EF1242CF27F7443F003FCE36 /* ResultsView.swift in Sources */,
+				EF80546927EE1D6F00A2C8E5 /* Combination.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF80544527EE1B6D00A2C8E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF80544E27EE1B6D00A2C8E5 /* MasterMind_EduTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF80544B27EE1B6D00A2C8E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF80543827EE1B6B00A2C8E5 /* MasterMind_Edu */;
+			targetProxy = EF80544A27EE1B6D00A2C8E5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		EF80545B27EE1B6D00A2C8E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EF80545C27EE1B6D00A2C8E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF80545E27EE1B6D00A2C8E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MasterMind_Edu/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.MasterMind-Edu";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF80545F27EE1B6D00A2C8E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MasterMind_Edu/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.MasterMind-Edu";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EF80546127EE1B6D00A2C8E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.MasterMind-EduTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MasterMind_Edu.app/MasterMind_Edu";
+			};
+			name = Debug;
+		};
+		EF80546227EE1B6D00A2C8E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.MasterMind-EduTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MasterMind_Edu.app/MasterMind_Edu";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF80543427EE1B6B00A2C8E5 /* Build configuration list for PBXProject "MasterMind_Edu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF80545B27EE1B6D00A2C8E5 /* Debug */,
+				EF80545C27EE1B6D00A2C8E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF80545D27EE1B6D00A2C8E5 /* Build configuration list for PBXNativeTarget "MasterMind_Edu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF80545E27EE1B6D00A2C8E5 /* Debug */,
+				EF80545F27EE1B6D00A2C8E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF80546027EE1B6D00A2C8E5 /* Build configuration list for PBXNativeTarget "MasterMind_EduTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF80546127EE1B6D00A2C8E5 /* Debug */,
+				EF80546227EE1B6D00A2C8E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF80543127EE1B6B00A2C8E5 /* Project object */;
+}
