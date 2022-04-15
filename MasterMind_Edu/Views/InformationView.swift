@@ -12,7 +12,7 @@ struct InformationView: View {
     
     var body: some View {
         VStack(alignment: .center, spacing: 10) {
-            Text("Mastermind Game Edu")
+            Text("Mastermind Edu")
                 .font(.title)
                 .foregroundColor(.accentColor)
             Text("You still have " + "\(viewModel.leftOpportunities)" + " opportunities")

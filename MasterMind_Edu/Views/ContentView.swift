@@ -11,14 +11,27 @@ struct ContentView: View {
     let masterMaindViewModel = MasterMaindViewModel()
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 2) {
-            InformationView(viewModel: masterMaindViewModel)
-            ForEach(masterMaindViewModel.board, id: \.self) { comb in
-                RowView(viewModel: RowViewModel(combination: comb.colors, resultsList: comb.result))
-            }
-            Spacer()
-            CombinationView(viewModel: CombinationViewModel(combination: masterMaindViewModel.actualCombination))
-        }
+		
+		if(masterMaindViewModel.finished){
+			VStack(alignment: .center, spacing: 10) {
+				Text("Mastermind Edu")
+					.font(.title)
+					.foregroundColor(.accentColor)
+				Button("Play"){
+					masterMaindViewModel.reset()
+				}
+			}
+		} else {
+			VStack(alignment: .leading, spacing: 2) {
+				InformationView(viewModel: masterMaindViewModel)
+				ForEach(masterMaindViewModel.board, id: \.self) { comb in
+					RowView(viewModel: RowViewModel(combination: comb.colors, resultsList: comb.result))
+				}
+				Spacer()
+				CombinationView(viewModel: CombinationViewModel(combination: masterMaindViewModel.actualCombination), masterMaindViewModel: masterMaindViewModel)
+			}
+		}
+        
     }
 }
 

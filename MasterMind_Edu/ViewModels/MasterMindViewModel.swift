@@ -17,9 +17,10 @@ class MasterMaindViewModel: ObservableObject {
     @Published private(set) var maxTries: Int = 12 //Numero maximo de intentos
     @Published private(set) var leftOpportunities: Int = 12 //Numero de intentos restantes
     
-    private static let validColors: [Color] = [.red, .green, .blue, .white] //Lista de colores validos
+    public static let validColors: [Color] = [.red, .green, .blue, .white] //Lista de colores validos
     private var secret: [Color]
-    private var finished: Bool = false
+    public private(set) var finished: Bool = false
+    public private(set) var win: Bool = false
     
     public private(set) var actualCombination: [Color]
     
@@ -40,10 +41,11 @@ class MasterMaindViewModel: ObservableObject {
         actualCombination = MasterMaindViewModel.generateDefaultCombination(self.secretLength)
     }
     
-    func check(_ combination: [Color]) -> Combination? {
-        if(combination.count != secretLength || board.count >= maxTries) {
+    func check(_ combination: [Color] = actualCombination) {
+        if(combination.count != secretLength || board.count > maxTries) {
             //Si la cantidad de elementos a comparar no coincide con la de la combinacion secreta o se ha superado el limite de intentos, se devuleve valor nulo
-            return nil
+            finished = true
+			return
         }
         
         var res: [Result] = []
@@ -72,18 +74,47 @@ class MasterMaindViewModel: ObservableObject {
         if(leftOpportunities == 0 || checkResults(res)){
             finished = true
         }
-        
-        return board.last
     }
     
     func checkResults(_ results: [Result]) -> Bool {
-        var allPositioned = true
         results.forEach(){ result in
             if(result != .positioned){
-                allPositioned = false
+                return false
             }
         }
-        return allPositioned
+		
+		if(results.count != secret.count){
+			return false
+		}
+		
+		self.win = true
+        return true
+    }
+    
+    func reset() {
+		self.board = [Combination]()
+        self.secret = MasterMaindViewModel.generateRandomCombination(self.secretLength)
+        self.actualCombination = MasterMaindViewModel.generateDefaultCombination(self.secretLength)
+		self.leftOpportunities = self.maxTries
+		self.finished = false
+		self.win = false
+    }
+    
+    func changeActualCombinationColor(_ index: Int) {
+        var tmpColor = self.actualCombination[index]
+		
+		for(i, color) in self.validColors.enumerated() {
+            guard color != tmpColor else {
+                continue
+            }
+			if(i = (self.validColors.count - 1)){
+				self.actualCombination[index] = self.validColors[0]
+			}else{
+				self.actualCombination[index] = self.validColors[i + 1]
+			}
+        }
+		
+		self.actualCombination[index]
     }
     
     public func generateRandomBoard() {

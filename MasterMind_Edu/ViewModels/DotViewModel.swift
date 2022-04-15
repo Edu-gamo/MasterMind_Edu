@@ -18,6 +18,7 @@ final class DotViewModel: ObservableObject, Hashable {
         hasher.combine(self.color)
         hasher.combine(self.size.width)
         hasher.combine(self.size.height)
+        hasher.combine(self.isButton)
     }
     
     @Published private(set) var color: Color = .white
